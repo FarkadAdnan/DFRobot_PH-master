@@ -25,4 +25,7 @@ Chapter 3 code_Project_72 The second part 2 of "The Arduino World Book" code_Pro
 
 
 ![SEN0161-V2](https://user-images.githubusercontent.com/35774039/158898998-77b665b1-97e5-410d-836c-3a0ddc83e2ae.png)
+#Summary
+Analog pH meter V2 is specifically designed to measure the pH of the solution and reflect the acidity or alkalinity. DFRobot ph sensor is commonly used in various applications such as aquaponics, aquaculture, and environmental water testing.
+
 ![aa](https://user-images.githubusercontent.com/35774039/158899243-c2ebfa61-9da8-4dee-a860-f17f263c5e0f.JPG)
