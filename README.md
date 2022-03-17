@@ -30,3 +30,15 @@ Chapter 3 code_Project_72 The second part 2 of "The Arduino World Book" code_Pro
 Analog pH meter V2 is specifically designed to measure the pH of the solution and reflect the acidity or alkalinity. DFRobot ph sensor is commonly used in various applications such as aquaponics, aquaculture, and environmental water testing.
 
 ![aa](https://user-images.githubusercontent.com/35774039/158899243-c2ebfa61-9da8-4dee-a860-f17f263c5e0f.JPG)
+
+# enterph 
+1. Input enterph command in the serial monitor to enter the calibration mode.
+![3](https://user-images.githubusercontent.com/35774039/158907930-ff4285b2-6082-4ca5-a78a-9ef169ea0353.JPG)
+
+2.Input calph commands in the serial monitor to start the calibration. The program will automatically identify which of the two standard buffer solutions is present: either 4.0 and 7.0. In this step, the standard buffer solution of 7.0 will be identified.
+![4](https://user-images.githubusercontent.com/35774039/158907955-fc8624a2-4f2a-40f9-8150-05cebf909038.JPG)
+
+3. After the calibration, input exitph command in the serial monitor to save the relevant parameters and exit the calibration mode. Note: Only after inputing exitph command in the serial monitor can the relevant parameters be saved.
+![5](https://user-images.githubusercontent.com/35774039/158907974-90209d52-295c-441c-84ad-a86dcf3731c7.JPG)
+
+
