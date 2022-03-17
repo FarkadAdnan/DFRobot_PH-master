@@ -41,4 +41,30 @@ Analog pH meter V2 is specifically designed to measure the pH of the solution an
 3. After the calibration, input exitph command in the serial monitor to save the relevant parameters and exit the calibration mode. Note: Only after inputing exitph command in the serial monitor can the relevant parameters be saved.
 ![5](https://user-images.githubusercontent.com/35774039/158907974-90209d52-295c-441c-84ad-a86dcf3731c7.JPG)
 
-
+```
+//By:Farkad Adnan
+#include "DFRobot_PH.h"
+#include <EEPROM.h>
+#define PH_PIN A1
+float voltage,phValue,temperature = 25;
+DFRobot_PH ph;
+void setup(){
+    Serial.begin(115200);  
+    ph.begin();
+}
+void loop(){
+    static unsigned long timepoint = millis();
+    if(millis()-timepoint>1000U){                  
+        timepoint = millis();
+        voltage = analogRead(PH_PIN)/1024.0*5000;  
+        phValue = ph.readPH(voltage,temperature);  
+        Serial.print("temperature:");
+        Serial.print(temperature,1);
+        Serial.print("^C  pH:");
+        Serial.println(phValue,2);
+    }
+    ph.calibration(voltage,temperature);          
+}
+float readTemperature(){
+}
+```
